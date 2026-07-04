@@ -11,7 +11,6 @@ from langchain_community.tools   import DuckDuckGoSearchRun
 from langgraph.checkpoint.memory import MemorySaver
 from langgraph.store.base        import BaseStore
 from pydantic                    import BaseModel, Field
-from langchain_openai            import ChatOpenAI
 
 load_dotenv()
 
