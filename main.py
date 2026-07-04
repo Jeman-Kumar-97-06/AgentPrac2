@@ -218,7 +218,7 @@ def compile_agent_graph():
     workflow.add_edge('generate_response_step', "extract_memory_step")
 
     # --> END
-    workflow.add_edge("generate_response_step", END)                     # Step 3: Generation stops execution
+    workflow.add_edge("extract_memory_step", END)                     # Step 3: Generation stops execution
     
     return workflow.compile()
 
